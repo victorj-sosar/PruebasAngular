@@ -3,6 +3,8 @@
   <h1>
     Welcome to {{ title }}!
   </h1>
-  <videojuego></videojuego>
+<button (click)="OcultarVideojuegos(false)" *ngIf="mostrar_videojuegos">Ocultar Videojuegos</button>
+<button (click)="OcultarVideojuegos(true)" *ngIf="!mostrar_videojuegos">Mosrar Videojuegos</button>
+  <videojuego *ngIf="mostrar_videojuegos"></videojuego>
   <zapatillas></zapatillas>
 </div>
