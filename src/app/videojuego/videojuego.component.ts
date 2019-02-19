@@ -1,9 +1,9 @@
-import { Component, OnInit, DoCheck } from "@angular/core";
+import { Component, OnInit, DoCheck, OnDestroy } from "@angular/core";
 @Component({
    selector: 'videojuego',
    templateUrl: './videojuego.component.html'
 })
-export class videojuego implements OnInit, DoCheck{
+export class videojuego implements OnInit, DoCheck, OnDestroy{
    public titulo: string;
    public listado: string;
    constructor() {
@@ -15,6 +15,10 @@ export class videojuego implements OnInit, DoCheck{
    }
    ngDoCheck(){
       console.log("DoCheck ejecutado");
+      
+   }
+   ngOnDestroy(){
+      console.log("OnDestroy ejecutado");
       
    }
    cambiarTitulo(){
