@@ -10,6 +10,6 @@ export class zapatillas{
    public listado: string;
    constructor(){
       this.titulo = "Componente de zapatillas"
-      this.listado = "Listado de las marcas mas populares"
+      this.listado = "Listado de las marcas mas populares en el mercado mexicano"
    }
 }
