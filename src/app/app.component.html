@@ -1,10 +1,11 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div class="container">
-  <h1>
-    Welcome to {{ title }}!
+<div class="container mt-3">
+  <h1 class="text-center">
+    {{ title }}!
   </h1>
-<button (click)="OcultarVideojuegos(false)" *ngIf="mostrar_videojuegos">Ocultar Videojuegos</button>
-<button (click)="OcultarVideojuegos(true)" *ngIf="!mostrar_videojuegos">Mosrar Videojuegos</button>
-  <videojuego *ngIf="mostrar_videojuegos"></videojuego>
+  <p class="text-muted text-center h4 mb-5"> {{ descripcion }} </p>
+<!-- <button (click)="OcultarVideojuegos(false)" class="btn btn-outline-danger" *ngIf="mostrar_videojuegos">Ocultar Videojuegos</button>
+<button (click)="OcultarVideojuegos(true)" class="btn btn-outline-primary" *ngIf="!mostrar_videojuegos">Mosrar Videojuegos</button>
+  <videojuego *ngIf="mostrar_videojuegos"></videojuego> -->
   <zapatillas></zapatillas>
 </div>

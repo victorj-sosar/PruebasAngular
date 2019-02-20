@@ -11,14 +11,12 @@ export class videojuego implements OnInit, DoCheck, OnDestroy{
       this. listado="Listado de juegos mas populares";
    }
    ngOnInit(){
-      console.log("OnInit ejecutado");
+
    }
    ngDoCheck(){
-      console.log("DoCheck ejecutado");
-      
+
    }
    ngOnDestroy(){
-      console.log("OnDestroy ejecutado");
       
    }
    cambiarTitulo(){
